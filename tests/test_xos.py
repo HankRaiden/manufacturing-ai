@@ -145,7 +145,10 @@ class RoiAndDashboardTest(unittest.TestCase):
         data = dashboard.build(SAMPLE, TODAY)
         self.assertEqual(len(data["jobs"]), 24)
         self.assertEqual(len(data["cases"]), 8)
-        self.assertIn("XOS Demo-Übersicht", dashboard.render_html(data))
+        page = dashboard.render_html(data)
+        for label in ("Tagesübersicht", "Wochenplan", "Auftragsupdates", "Vorgänge", "26-0101"):
+            self.assertIn(label, page)
+        self.assertEqual(sum(data["status_counts"].values()), 24)
         json.dumps(data)  # muss serialisierbar sein
 
 

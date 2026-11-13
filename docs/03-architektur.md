@@ -64,7 +64,8 @@ flowchart TB
 | `followup.py` | Angebote nachfassen | Angebotsliste | fällige Erinnerungen |
 | `reactivation.py` | Kunden auswählen | Kundenliste | Segmente und Potenzial |
 | `roi.py` | Status quo beziffern | Annahmen | Kosten pro Jahr |
-| `dashboard.py` | alles zusammenführen | alle oben | JSON und eine HTML-Seite |
+| `dashboard.py` | alles zusammenführen | alle oben | Daten für die Oberfläche (JSON) |
+| `page.py` | Oberfläche darstellen | Daten aus `dashboard.py` | eine HTML-Seite mit Reitern, aufgebaut wie die ursprüngliche Demo |
 
 ## An das eigene System anpassen
 

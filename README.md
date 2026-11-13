@@ -32,9 +32,9 @@ python3 -m xos roi       # Kosten des Status quo mit Beispielannahmen
 python3 -m unittest discover -s tests
 ```
 
-Danach `out/dashboard.html` im Browser öffnen. Alle Daten in `data/sample` sind frei erfunden.
+Danach `out/dashboard.html` im Browser öffnen. Die Seite ist wie die ursprüngliche Demo aufgebaut, mit Reitern für Tagesübersicht, Aufträge, Wochenplan, Versand, Auftragsupdates, Vorgänge und Reports. Alle Daten in `data/sample` sind frei erfunden.
 
-![Demo-Übersicht mit synthetischen Daten](assets/demo-dashboard.png)
+![Wochenplan der Demo mit synthetischen Daten](assets/demo-wochenplan.png)
 
 ## Was hier liegt
 
