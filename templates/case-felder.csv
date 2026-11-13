@@ -1,0 +1,14 @@
+gruppe,feld,typ,werte,zweck
+Steuerung,Status,Auswahl,Neu | In Bearbeitung | Wartet auf Kunde | Wartet auf Intern | Erledigt,Jeder Vorgang muss bewegt werden
+Steuerung,Priorität,Auswahl,Niedrig | Normal | Hoch | Kritisch,Signalwörter wie eilt oder Stopp heben die Priorität
+Steuerung,Zuständig,Auswahl,Info-Zentrale | Geschäftsführung | Kalkulation | Arbeitsvorbereitung | Buchhaltung,Ersetzt das Weiterleiten im Postfach
+Steuerung,Art,Auswahl,Preisanfrage / Kalkulation | Auftrag (Neu) | Datenlieferung | Reklamation | Status-Nachfrage | Rechnung / Admin | Sonstiges,Grundlage für Regeln und Auswertung
+Steuerung,Antwort bis,Datum,,Frist für die Antwort (nicht der Liefertermin)
+Produktionsdaten,Auftragsnummer,Text,,Verbindung zur Auftragsliste
+Produktionsdaten,Wunschtermin des Kunden,Datum,,Wann braucht der Kunde die Ware
+Produktionsdaten,Kategorie,Auswahl,je nach Betrieb,Hilft bei der Zuteilung
+Produktionsdaten,Anhang,Auswahl,Keine Dateien | Anhang vorhanden | Download-Link,Ist die Anfrage schon bearbeitbar
+Produktionsdaten,Betreff,Text,,Titel in der Liste
+Inhalt,Zusammenfassung,Langtext,,Kernpunkte in ein bis zwei Sätzen
+Inhalt,Stimmung,Auswahl,Positiv | Neutral | Negativ,Negativ bei Reklamation löst Eskalation aus
+Inhalt,Originaltext,Langtext,,Unveränderter Text der E-Mail als Absicherung

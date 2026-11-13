@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Auftrag nummer="26-0105" produktart="Mappe" beschreibung="Beispielauftrag 5" sachbearbeiter="MA-2">
+  <Kunde name="Möbelhaus Eiche" kundennummer="K-1005"/>
+  <Auflage hoehe="5000"/>
+  <Termine druck="46093" weiterverarbeitung="46094" lieferung="46096"/>
+  <Lieferadresse name="Möbelhaus Eiche" strasse="Industriering 9" plz="51063" ort="Köln"/>
+  <Arbeitsgaenge>
+    <Arbeitsgang kostenstelle="4120" name="Bogenoffset 2" bezeichnung="Druck" ruestzeit_min="40" laufzeit_min="90" termin="druck"/>
+    <Arbeitsgang kostenstelle="4310" name="Veredelung" bezeichnung="Veredelung" ruestzeit_min="10" laufzeit_min="30" termin="weiterverarbeitung"/>
+  </Arbeitsgaenge>
+</Auftrag>

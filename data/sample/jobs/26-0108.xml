@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Auftrag nummer="26-0108" produktart="Mappe" beschreibung="Beispielauftrag 8" sachbearbeiter="MA-1">
+  <Kunde name="Muster Verlag GmbH" kundennummer="K-1000"/>
+  <Auflage hoehe="2500"/>
+  <Termine druck="46092" weiterverarbeitung="46093" lieferung="46095"/>
+  <Lieferadresse name="Muster Verlag GmbH" strasse="Beispielweg 1" plz="50667" ort="Köln"/>
+  <Arbeitsgaenge>
+    <Arbeitsgang kostenstelle="4120" name="Bogenoffset 2" bezeichnung="Druck" ruestzeit_min="50" laufzeit_min="120" termin="druck"/>
+    <Arbeitsgang kostenstelle="4220" name="Falzen" bezeichnung="Falzen" ruestzeit_min="15" laufzeit_min="45" termin="weiterverarbeitung"/>
+  </Arbeitsgaenge>
+</Auftrag>

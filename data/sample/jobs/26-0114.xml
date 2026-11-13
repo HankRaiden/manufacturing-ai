@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Auftrag nummer="26-0114" produktart="Faltschachtel" beschreibung="Beispielauftrag 14" sachbearbeiter="MA-2">
+  <Kunde name="Rheinblick Events GmbH" kundennummer="K-1001"/>
+  <Auflage hoehe="250"/>
+  <Termine druck="46091" weiterverarbeitung="46092" lieferung="46094"/>
+  <Lieferadresse name="Rheinblick Events GmbH" strasse="Uferallee 22" plz="40213" ort="Düsseldorf"/>
+  <Arbeitsgaenge>
+    <Arbeitsgang kostenstelle="4110" name="Bogenoffset 1" bezeichnung="Druck" ruestzeit_min="40" laufzeit_min="120" termin="druck"/>
+    <Arbeitsgang kostenstelle="4220" name="Falzen" bezeichnung="Falzen" ruestzeit_min="10" laufzeit_min="90" termin="weiterverarbeitung"/>
+    <Arbeitsgang kostenstelle="4210" name="Schneiden" bezeichnung="Schneiden" ruestzeit_min="15" laufzeit_min="90" termin="weiterverarbeitung"/>
+  </Arbeitsgaenge>
+</Auftrag>

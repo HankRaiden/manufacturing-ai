@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Auftrag nummer="26-0119" produktart="Faltschachtel" beschreibung="Beispielauftrag 19" sachbearbeiter="MA-1">
+  <Kunde name="Stadtwerke Musterstadt" kundennummer="K-1003"/>
+  <Auflage hoehe="2500"/>
+  <Termine druck="46093" weiterverarbeitung="46094" lieferung="46095"/>
+  <Lieferadresse name="Stadtwerke Musterstadt" strasse="Am Werk 3" plz="53111" ort="Bonn"/>
+  <Arbeitsgaenge>
+    <Arbeitsgang kostenstelle="4120" name="Bogenoffset 2" bezeichnung="Druck" ruestzeit_min="40" laufzeit_min="60" termin="druck"/>
+    <Arbeitsgang kostenstelle="4220" name="Falzen" bezeichnung="Falzen" ruestzeit_min="20" laufzeit_min="45" termin="weiterverarbeitung"/>
+  </Arbeitsgaenge>
+</Auftrag>

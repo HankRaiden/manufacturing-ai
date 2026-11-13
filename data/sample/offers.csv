@@ -1,0 +1,9 @@
+angebot,kunde,ansprechpartner,sachbearbeiter,gesendet_am,status,antwort_am,erinnerungen,letzte_erinnerung
+A26-0300,Beispielkunde 03 GmbH,Herr Muster,MA-1,2026-03-10,offen,,0,
+A26-0301,Beispielkunde 04 GmbH,Frau Beispiel,MA-2,2026-03-06,offen,2026-03-07,0,
+A26-0302,Beispielkunde 05 GmbH,Herr Muster,MA-3,2026-03-10,offen,,0,
+A26-0303,Beispielkunde 06 GmbH,Frau Beispiel,MA-1,2026-03-10,offen,,0,
+A26-0304,Beispielkunde 07 GmbH,Herr Muster,MA-2,2026-03-10,offen,,0,
+A26-0305,Beispielkunde 08 GmbH,Frau Beispiel,MA-3,2026-02-27,offen,,0,
+A26-0306,Beispielkunde 09 GmbH,Herr Muster,MA-1,2026-03-02,offen,2026-03-03,0,
+A26-0307,Beispielkunde 10 GmbH,Frau Beispiel,MA-2,2026-03-02,offen,,0,

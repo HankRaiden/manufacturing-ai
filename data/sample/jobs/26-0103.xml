@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Auftrag nummer="26-0103" produktart="Broschüre" beschreibung="Beispielauftrag 3" sachbearbeiter="MA-3">
+  <Kunde name="Brauerei Hopfenhof" kundennummer="K-1008"/>
+  <Auflage hoehe="5000"/>
+  <Termine druck="46091" weiterverarbeitung="46092" lieferung="46094"/>
+  <Lieferadresse name="Brauerei Hopfenhof" strasse="Brauweg 7" plz="51373" ort="Leverkusen"/>
+  <Arbeitsgaenge>
+    <Arbeitsgang kostenstelle="4120" name="Bogenoffset 2" bezeichnung="Druck" ruestzeit_min="30" laufzeit_min="240" termin="druck"/>
+    <Arbeitsgang kostenstelle="4310" name="Veredelung" bezeichnung="Veredelung" ruestzeit_min="15" laufzeit_min="45" termin="weiterverarbeitung"/>
+  </Arbeitsgaenge>
+</Auftrag>

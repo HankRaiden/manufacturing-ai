@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Auftrag nummer="26-0116" produktart="Mappe" beschreibung="Beispielauftrag 16" sachbearbeiter="MA-1">
+  <Kunde name="Brauerei Hopfenhof" kundennummer="K-1008"/>
+  <Auflage hoehe="500"/>
+  <Termine druck="46090" weiterverarbeitung="46091" lieferung="46093"/>
+  <Lieferadresse name="Brauerei Hopfenhof" strasse="Brauweg 7" plz="51373" ort="Leverkusen"/>
+  <Arbeitsgaenge>
+    <Arbeitsgang kostenstelle="4130" name="Digitaldruck" bezeichnung="Druck" ruestzeit_min="20" laufzeit_min="120" termin="druck"/>
+    <Arbeitsgang kostenstelle="4210" name="Schneiden" bezeichnung="Schneiden" ruestzeit_min="10" laufzeit_min="60" termin="weiterverarbeitung"/>
+    <Arbeitsgang kostenstelle="4220" name="Falzen" bezeichnung="Falzen" ruestzeit_min="20" laufzeit_min="45" termin="weiterverarbeitung"/>
+  </Arbeitsgaenge>
+</Auftrag>

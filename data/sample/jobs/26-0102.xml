@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Auftrag nummer="26-0102" produktart="Broschüre" beschreibung="Beispielauftrag 2" sachbearbeiter="MA-1">
+  <Kunde name="Rheinblick Events GmbH" kundennummer="K-1001"/>
+  <Auflage hoehe="250"/>
+  <Termine druck="46093" weiterverarbeitung="46094" lieferung="46096"/>
+  <Lieferadresse name="Rheinblick Events GmbH" strasse="Uferallee 22" plz="40213" ort="Düsseldorf"/>
+  <Arbeitsgaenge>
+    <Arbeitsgang kostenstelle="4110" name="Bogenoffset 1" bezeichnung="Druck" ruestzeit_min="30" laufzeit_min="60" termin="druck"/>
+    <Arbeitsgang kostenstelle="4210" name="Schneiden" bezeichnung="Schneiden" ruestzeit_min="10" laufzeit_min="30" termin="weiterverarbeitung"/>
+    <Arbeitsgang kostenstelle="4310" name="Veredelung" bezeichnung="Veredelung" ruestzeit_min="20" laufzeit_min="90" termin="weiterverarbeitung"/>
+  </Arbeitsgaenge>
+</Auftrag>

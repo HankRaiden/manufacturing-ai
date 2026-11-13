@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Auftrag nummer="26-0121" produktart="Mappe" beschreibung="Beispielauftrag 21" sachbearbeiter="MA-3">
+  <Kunde name="Kaffeerösterei Bohne &amp; Co." kundennummer="K-1002"/>
+  <Auflage hoehe="500"/>
+  <Termine druck="46094" weiterverarbeitung="46095" lieferung="46097"/>
+  <Lieferadresse name="Kaffeerösterei Bohne &amp; Co." strasse="Röstergasse 5" plz="50823" ort="Köln"/>
+  <Arbeitsgaenge>
+    <Arbeitsgang kostenstelle="4130" name="Digitaldruck" bezeichnung="Druck" ruestzeit_min="40" laufzeit_min="90" termin="druck"/>
+    <Arbeitsgang kostenstelle="4210" name="Schneiden" bezeichnung="Schneiden" ruestzeit_min="10" laufzeit_min="30" termin="weiterverarbeitung"/>
+  </Arbeitsgaenge>
+</Auftrag>

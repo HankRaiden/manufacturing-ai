@@ -1,0 +1,58 @@
+[
+  {
+    "von": "einkauf@beispielkunde01.example",
+    "betreff": "Anfrage 5.000 Broschüren",
+    "text": "Guten Tag,\nwir benötigen ein Angebot für 5.000 Broschüren, 24 Seiten, A4. Lieferung bis 27.03. wäre ideal.\nViele Grüße",
+    "anhaenge": 0,
+    "eingang": "2026-03-11T07:00:00"
+  },
+  {
+    "von": "marketing@beispielkunde02.example",
+    "betreff": "Reklamation Auftrag 26-0104",
+    "text": "Hallo,\ndie Lieferung zu 26-0104 ist beschädigt angekommen, mehrere Kartons sind eingedrückt. Das ist sehr ärgerlich, wir brauchen dringend Ersatz.\nMfG",
+    "anhaenge": 2,
+    "eingang": "2026-03-11T08:05:00"
+  },
+  {
+    "von": "office@beispielkunde03.example",
+    "betreff": "Wann kommt unsere Lieferung?",
+    "text": "Guten Morgen,\nwann kommt unsere Lieferung zum Auftrag 26-0110? Wir bräuchten sie bis Freitag.\nDanke",
+    "anhaenge": 0,
+    "eingang": "2026-03-11T09:10:00"
+  },
+  {
+    "von": "grafik@beispielkunde04.example",
+    "betreff": "Druckdaten Katalog",
+    "text": "Hallo zusammen,\nanbei die Daten für den Katalog als Download: https://we.tl/beispiel\nBitte um kurze Bestätigung.",
+    "anhaenge": 0,
+    "eingang": "2026-03-11T10:15:00"
+  },
+  {
+    "von": "buchhaltung@beispielkunde05.example",
+    "betreff": "Rechnung fehlt",
+    "text": "Sehr geehrte Damen und Herren,\nuns fehlt noch die Rechnung zur letzten Lieferung. Können Sie diese bitte erneut senden?\nFreundliche Grüße",
+    "anhaenge": 0,
+    "eingang": "2026-03-11T11:20:00"
+  },
+  {
+    "von": "inhaber@beispielkunde06.example",
+    "betreff": "Bestellung Flyer",
+    "text": "Guten Tag,\nhiermit bestelle ich 2.500 Flyer wie im Angebot A26-0302 beschrieben. Die finale Datei hängt an.\nViele Grüße",
+    "anhaenge": 1,
+    "eingang": "2026-03-11T12:25:00"
+  },
+  {
+    "von": "einkauf@beispielkunde07.example",
+    "betreff": "Vielen Dank",
+    "text": "Hallo,\nvielen Dank für die schnelle Lieferung, die Mappen sind super geworden.\nBeste Grüße",
+    "anhaenge": 0,
+    "eingang": "2026-03-11T13:30:00"
+  },
+  {
+    "von": "leitung@beispielkunde08.example",
+    "betreff": "EILT: Stopp Auftrag 26-0118",
+    "text": "Bitte sofort stoppen! Im Auftrag 26-0118 ist ein Fehler im Text. Korrigierte Datei folgt heute noch.",
+    "anhaenge": 0,
+    "eingang": "2026-03-11T14:35:00"
+  }
+]

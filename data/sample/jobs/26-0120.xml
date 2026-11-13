@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Auftrag nummer="26-0120" produktart="Flyer" beschreibung="Beispielauftrag 20" sachbearbeiter="MA-3">
+  <Kunde name="Möbelhaus Eiche" kundennummer="K-1005"/>
+  <Auflage hoehe="2500"/>
+  <Termine druck="46090" weiterverarbeitung="46091" lieferung="46093"/>
+  <Lieferadresse name="Möbelhaus Eiche" strasse="Industriering 9" plz="51063" ort="Köln"/>
+  <Arbeitsgaenge>
+    <Arbeitsgang kostenstelle="4120" name="Bogenoffset 2" bezeichnung="Druck" ruestzeit_min="50" laufzeit_min="60" termin="druck"/>
+    <Arbeitsgang kostenstelle="4210" name="Schneiden" bezeichnung="Schneiden" ruestzeit_min="10" laufzeit_min="30" termin="weiterverarbeitung"/>
+  </Arbeitsgaenge>
+</Auftrag>

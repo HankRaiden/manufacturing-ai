@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Auftrag nummer="26-0118" produktart="Faltschachtel" beschreibung="Beispielauftrag 18" sachbearbeiter="MA-1">
+  <Kunde name="TechStart Labs GmbH" kundennummer="K-1009"/>
+  <Auflage hoehe="1000"/>
+  <Termine druck="46092" weiterverarbeitung="46093" lieferung="46095"/>
+  <Lieferadresse name="TechStart Labs GmbH" strasse="Gründerallee 11" plz="40221" ort="Düsseldorf"/>
+  <Arbeitsgaenge>
+    <Arbeitsgang kostenstelle="4130" name="Digitaldruck" bezeichnung="Druck" ruestzeit_min="40" laufzeit_min="120" termin="druck"/>
+    <Arbeitsgang kostenstelle="4210" name="Schneiden" bezeichnung="Schneiden" ruestzeit_min="10" laufzeit_min="45" termin="weiterverarbeitung"/>
+  </Arbeitsgaenge>
+</Auftrag>

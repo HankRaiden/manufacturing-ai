@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Auftrag nummer="26-0106" produktart="Katalog" beschreibung="Beispielauftrag 6" sachbearbeiter="MA-1">
+  <Kunde name="Buchhandlung Seitenweise" kundennummer="K-1007"/>
+  <Auflage hoehe="5000"/>
+  <Termine druck="46092" weiterverarbeitung="46093" lieferung="46095"/>
+  <Lieferadresse name="Buchhandlung Seitenweise" strasse="Marktplatz 2" plz="52062" ort="Aachen"/>
+  <Arbeitsgaenge>
+    <Arbeitsgang kostenstelle="4120" name="Bogenoffset 2" bezeichnung="Druck" ruestzeit_min="20" laufzeit_min="60" termin="druck"/>
+    <Arbeitsgang kostenstelle="4210" name="Schneiden" bezeichnung="Schneiden" ruestzeit_min="10" laufzeit_min="90" termin="weiterverarbeitung"/>
+    <Arbeitsgang kostenstelle="4220" name="Falzen" bezeichnung="Falzen" ruestzeit_min="15" laufzeit_min="30" termin="weiterverarbeitung"/>
+  </Arbeitsgaenge>
+</Auftrag>

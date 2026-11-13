@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Manufacturing AI – Überblick</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --color-bg: #f2f2f3;
+  --color-text: #1d1f20;
+  --color-accent: #5980a6;
+  --color-accent-100: #e4ebf2;
+  --color-accent-300: #a8bdd3;
+  --color-accent-700: #3b5a79;
+  --color-accent-900: #1e3246;
+  --color-neutral-500: #6b7075;
+  --font-heading: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --font-body: "Barlow", "Helvetica Neue", Arial, sans-serif;
+  --space-1: 8px; --space-2: 14px; --space-3: 20px; --space-4: 28px; --space-5: 40px;
+  --hairline: 1px solid var(--color-accent-300);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1350px; }
+body {
+  background-color: var(--color-bg);
+  background-image:
+    linear-gradient(to right, rgba(89,128,166,.09) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(89,128,166,.09) 1px, transparent 1px);
+  background-size: 44px 44px;
+  background-position: 48px 38px;
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 21px;
+  line-height: 1.32;
+  padding: 38px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+h1, h2, h3, .kicker, .num, .fig b, .btn { font-family: var(--font-heading); }
+.kicker {
+  font-weight: 600; font-size: 20px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--color-accent-700); display: flex; justify-content: space-between;
+}
+h1 { font-weight: 700; font-size: 64px; line-height: .95; text-transform: uppercase; letter-spacing: .005em; }
+.lead { font-size: 22px; max-width: 900px; margin-top: 10px; }
+h2 {
+  font-weight: 600; font-size: 21px; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--color-accent-700); margin-bottom: 10px;
+}
+
+/* Blueprint-Objekt: eckig, Haarlinie, Passermarken an den Ecken */
+.blueprint { position: relative; border: var(--hairline); background: transparent; }
+.blueprint > .corner { position: absolute; width: 15px; height: 15px; pointer-events: none; }
+.blueprint > .corner::before, .blueprint > .corner::after { content: ""; position: absolute; background: var(--color-accent); }
+.blueprint > .corner::before { left: 7px; top: 0; width: 1px; height: 15px; }
+.blueprint > .corner::after { top: 7px; left: 0; height: 1px; width: 15px; }
+.corner.tl { top: -8px; left: -8px; } .corner.tr { top: -8px; right: -8px; }
+.corner.bl { bottom: -8px; left: -8px; } .corner.br { bottom: -8px; right: -8px; }
+
+.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3); }
+.grid4 { display: grid; grid-template-columns: repeat(4, 1fr); }
+.grid2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-3); }
+
+.fig { padding: 11px 16px 13px; }
+.fig b { display: block; font-weight: 600; font-size: 42px; line-height: 1; color: var(--color-accent-700); }
+.fig span { display: block; margin-top: 4px; font-size: 19px; line-height: 1.25; }
+
+.card { padding: 13px 16px 12px; display: flex; flex-direction: column; gap: 7px; }
+.card-head { display: flex; align-items: center; justify-content: space-between; color: var(--color-accent); }
+.num { font-weight: 600; font-size: 20px; letter-spacing: .14em; color: var(--color-accent-700); }
+.card h3 { font-weight: 600; font-size: 27px; line-height: 1.02; text-transform: uppercase; }
+.card ul { list-style: none; font-size: 19px; }
+.card li { padding: 3px 0; border-top: 1px solid var(--color-accent-100); }
+.card li:first-child { border-top: var(--hairline); }
+svg.lucide { width: 30px; height: 30px; stroke-width: 1.5; }
+
+
+.learn .cell { padding: 10px 14px 12px; line-height: 1.25; border-left: var(--hairline); font-size: 20px; }
+.learn .cell:first-child { border-left: 0; }
+.learn .cell b { display: block; font-family: var(--font-heading); font-weight: 600; font-size: 21px; letter-spacing: .12em; color: var(--color-accent-700); margin-bottom: 3px; }
+
+.foot { margin-top: auto; display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); }
+.btn {
+  position: relative; background: var(--color-accent); color: #fff; border: 1px solid var(--color-accent);
+  padding: 12px 22px; font-weight: 600; font-size: 27px; letter-spacing: .03em;
+  display: inline-flex; align-items: center; gap: 14px;
+}
+.btn svg.lucide { width: 28px; height: 28px; }
+.sign { text-align: right; font-size: 20px; color: var(--color-neutral-500); }
+.sign b { display: block; font-family: var(--font-heading); font-weight: 600; font-size: 25px; color: var(--color-text); letter-spacing: .04em; text-transform: uppercase; }
+.note { font-size: 16px; color: var(--color-neutral-500); margin-top: 7px; }
+.strip { padding: 11px 16px; display: flex; align-items: center; gap: 16px; font-size: 20px; line-height: 1.28; color: var(--color-text); }
+.strip svg.lucide { flex: none; color: var(--color-accent); }
+.strip b { font-family: var(--font-heading); font-weight: 600; font-size: 24px; text-transform: uppercase; letter-spacing: .02em; }
+</style>
+</head>
+<body>
+
+<div class="kicker"><span>Manufacturing AI</span><span>Open Source · Konzept und Demo</span></div>
+
+<header>
+  <h1>Vom Papierauftrag<br>zum digitalen Betrieb</h1>
+  <p class="lead">Konzept und lauffähige Demo für eine Industriedruckerei, die mit Papier steuert. Im Betrieb umgesetzt wurde es bisher nicht. Alles liegt offen auf GitHub.</p>
+</header>
+
+<section>
+  <h2>Ausgangslage</h2>
+  <div class="grid3">
+    <div class="blueprint fig"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <b>30–40</b><span>Auftragstaschen pro Tag</span></div>
+    <div class="blueprint fig"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <b>7</b><span>Postfächer ohne Übersicht</span></div>
+    <div class="blueprint fig"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <b>3.000+</b><span>Kunden ohne Ansprache</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>Der Ansatz</h2>
+  <div class="blueprint strip"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <i data-lucide="file-code"></i>
+    <div><b>Die Daten waren schon da.</b> Die Branchensoftware schreibt für jeden Auftrag eine XML-Datei. Sie liefert den Plan, ein QR-Scan in der Halle den tatsächlichen Stand.</div>
+  </div>
+</section>
+
+<section>
+  <h2>Drei Säulen</h2>
+  <div class="grid3">
+    <div class="blueprint card"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div class="card-head"><span class="num">01</span><i data-lucide="factory"></i></div>
+      <h3>Transparenz<br>in der Halle</h3>
+      <ul><li>Auftragsliste</li><li>Maschinen-Kalender</li><li>Status per QR-Code</li><li>Versand-Planer</li></ul>
+    </div>
+    <div class="blueprint card"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div class="card-head"><span class="num">02</span><i data-lucide="users"></i></div>
+      <h3>Umsatz aus<br>dem Bestand</h3>
+      <ul><li>Kunden einteilen: A, B, C</li><li>Inaktive anschreiben</li><li>Nur mit Einwilligung</li><li>Ergebnis messen</li></ul>
+    </div>
+    <div class="blueprint card"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div class="card-head"><span class="num">03</span><i data-lucide="inbox"></i></div>
+      <h3>Ordnung<br>im Büro</h3>
+      <ul><li>E-Mail wird Vorgang</li><li>Zuständigkeit und Frist</li><li>KI ordnet ein</li><li>Angebote nachfassen</li></ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Geschätztes Potenzial pro Jahr</h2>
+  <div class="grid2">
+    <div class="blueprint fig"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <b>≈ 219.000 €</b><span>Kosten des Status quo</span></div>
+    <div class="blueprint fig"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <b>≈ 120.000 €</b><span>Umsatz aus Reaktivierung</span></div>
+  </div>
+  <p class="note">Schätzungen aus der Angebotsphase, keine gemessenen Ergebnisse: Suchaufwand, verpasste Anfragen, Leerlauf, Versand, 2 % Rücklauf. Die Rechnung steht im Repository.</p>
+</section>
+
+<section>
+  <h2>Was ich heute anders machen würde</h2>
+  <div class="blueprint grid4 learn"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <div class="cell"><b>A</b>Eigene Software statt White-Label-CRM</div>
+    <div class="cell"><b>B</b>Daten bleiben im Betrieb</div>
+    <div class="cell"><b>C</b>Mit einer Säule starten, nicht mit drei</div>
+    <div class="cell"><b>D</b>Bezahlung nach Ergebnis</div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="blueprint btn"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+    <i data-lucide="git-branch"></i>github.com/HankRaiden/manufacturing-ai</div>
+  <div class="sign"><b>Felipe Holanda</b>Kostenlos · MIT-Lizenz</div>
+</footer>
+
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script>lucide.createIcons({ attrs: { "stroke-width": 1.5 } }); document.documentElement.dataset.h = Math.round(document.querySelector('.foot').getBoundingClientRect().bottom);</script>
+</body>
+</html>

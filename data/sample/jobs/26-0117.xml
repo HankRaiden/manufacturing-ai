@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Auftrag nummer="26-0117" produktart="Plakat" beschreibung="Beispielauftrag 17" sachbearbeiter="MA-1">
+  <Kunde name="Praxis Dr. Beispiel" kundennummer="K-1006"/>
+  <Auflage hoehe="10000"/>
+  <Termine druck="46091" weiterverarbeitung="46092" lieferung="46093"/>
+  <Lieferadresse name="Praxis Dr. Beispiel" strasse="Parkstraße 14" plz="53113" ort="Bonn"/>
+  <Arbeitsgaenge>
+    <Arbeitsgang kostenstelle="4130" name="Digitaldruck" bezeichnung="Druck" ruestzeit_min="50" laufzeit_min="120" termin="druck"/>
+    <Arbeitsgang kostenstelle="4210" name="Schneiden" bezeichnung="Schneiden" ruestzeit_min="15" laufzeit_min="90" termin="weiterverarbeitung"/>
+  </Arbeitsgaenge>
+</Auftrag>

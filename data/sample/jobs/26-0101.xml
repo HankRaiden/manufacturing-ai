@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Auftrag nummer="26-0101" produktart="Mappe" beschreibung="Beispielauftrag 1" sachbearbeiter="MA-1">
+  <Kunde name="Möbelhaus Eiche" kundennummer="K-1005"/>
+  <Auflage hoehe="250"/>
+  <Termine druck="46091" weiterverarbeitung="46092" lieferung="46094"/>
+  <Lieferadresse name="Möbelhaus Eiche" strasse="Industriering 9" plz="51063" ort="Köln"/>
+  <Arbeitsgaenge>
+    <Arbeitsgang kostenstelle="4130" name="Digitaldruck" bezeichnung="Druck" ruestzeit_min="20" laufzeit_min="60" termin="druck"/>
+    <Arbeitsgang kostenstelle="4220" name="Falzen" bezeichnung="Falzen" ruestzeit_min="20" laufzeit_min="30" termin="weiterverarbeitung"/>
+  </Arbeitsgaenge>
+</Auftrag>

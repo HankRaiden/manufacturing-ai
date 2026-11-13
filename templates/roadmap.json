@@ -1,0 +1,34 @@
+{
+  "titel": "Fahrplan in acht Wochen (zwei Säulen)",
+  "hinweis": "Vorlage. Zeiträume und Inhalte an den eigenen Betrieb anpassen.",
+  "sprints": [
+    {
+      "wochen": "1-2",
+      "titel": "Erste Ergebnisse sichtbar",
+      "inhalte": ["Auftragsliste einrichten", "E-Mail-to-Case starten"],
+      "meilenstein": "Aufträge ab Tag 7 per Nummer abrufbar"
+    },
+    {
+      "wochen": "3-4",
+      "titel": "Kernbausteine aktiv",
+      "inhalte": ["Maschinen-Kalender mit Daten der Branchensoftware", "Angebote automatisch nachfassen"],
+      "meilenstein": "Auslastung je Kostenstelle sichtbar"
+    },
+    {
+      "wochen": "5-6",
+      "titel": "Halle und Logistik",
+      "inhalte": ["Status per QR-Code", "Versand-Planer", "Übersicht für das Büro"],
+      "meilenstein": "Status kommt aus der Halle, nicht aus dem Flur"
+    },
+    {
+      "wochen": "7-8",
+      "titel": "Abnahme und Schulung",
+      "inhalte": ["Übersicht Maschinenauslastung", "Abnahme durch die Geschäftsführung (4 Stunden)", "Schulung in 4 Blöcken zu 2 Stunden"],
+      "meilenstein": "Übergabe"
+    }
+  ],
+  "rhythmus": {
+    "woechentlich": "Kurzes Update per Video oder E-Mail",
+    "vierzehntaegig": "Termin zur Abnahme des Sprints"
+  }
+}

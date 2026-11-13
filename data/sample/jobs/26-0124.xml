@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Auftrag nummer="26-0124" produktart="Katalog" beschreibung="Beispielauftrag 24" sachbearbeiter="MA-3">
+  <Kunde name="TechStart Labs GmbH" kundennummer="K-1009"/>
+  <Auflage hoehe="5000"/>
+  <Termine druck="46090" weiterverarbeitung="46091" lieferung="46092"/>
+  <Lieferadresse name="TechStart Labs GmbH" strasse="Gründerallee 11" plz="40221" ort="Düsseldorf"/>
+  <Arbeitsgaenge>
+    <Arbeitsgang kostenstelle="4110" name="Bogenoffset 1" bezeichnung="Druck" ruestzeit_min="30" laufzeit_min="180" termin="druck"/>
+    <Arbeitsgang kostenstelle="4310" name="Veredelung" bezeichnung="Veredelung" ruestzeit_min="10" laufzeit_min="60" termin="weiterverarbeitung"/>
+  </Arbeitsgaenge>
+</Auftrag>

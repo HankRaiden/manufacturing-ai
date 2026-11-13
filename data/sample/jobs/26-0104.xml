@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Auftrag nummer="26-0104" produktart="Katalog" beschreibung="Beispielauftrag 4" sachbearbeiter="MA-3">
+  <Kunde name="Stadtwerke Musterstadt" kundennummer="K-1003"/>
+  <Auflage hoehe="2500"/>
+  <Termine druck="46092" weiterverarbeitung="46093" lieferung="46094"/>
+  <Lieferadresse name="Stadtwerke Musterstadt" strasse="Am Werk 3" plz="53111" ort="Bonn"/>
+  <Arbeitsgaenge>
+    <Arbeitsgang kostenstelle="4130" name="Digitaldruck" bezeichnung="Druck" ruestzeit_min="20" laufzeit_min="240" termin="druck"/>
+    <Arbeitsgang kostenstelle="4310" name="Veredelung" bezeichnung="Veredelung" ruestzeit_min="10" laufzeit_min="90" termin="weiterverarbeitung"/>
+  </Arbeitsgaenge>
+</Auftrag>

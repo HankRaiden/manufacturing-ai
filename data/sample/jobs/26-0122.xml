@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Auftrag nummer="26-0122" produktart="Etikett" beschreibung="Beispielauftrag 22" sachbearbeiter="MA-1">
+  <Kunde name="Praxis Dr. Beispiel" kundennummer="K-1006"/>
+  <Auflage hoehe="250"/>
+  <Termine druck="46091" weiterverarbeitung="46092" lieferung="46093"/>
+  <Lieferadresse name="Praxis Dr. Beispiel" strasse="Parkstraße 14" plz="53113" ort="Bonn"/>
+  <Arbeitsgaenge>
+    <Arbeitsgang kostenstelle="4110" name="Bogenoffset 1" bezeichnung="Druck" ruestzeit_min="40" laufzeit_min="90" termin="druck"/>
+    <Arbeitsgang kostenstelle="4310" name="Veredelung" bezeichnung="Veredelung" ruestzeit_min="20" laufzeit_min="60" termin="weiterverarbeitung"/>
+    <Arbeitsgang kostenstelle="4210" name="Schneiden" bezeichnung="Schneiden" ruestzeit_min="15" laufzeit_min="90" termin="weiterverarbeitung"/>
+  </Arbeitsgaenge>
+</Auftrag>

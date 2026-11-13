@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Auftrag nummer="26-0112" produktart="Broschüre" beschreibung="Beispielauftrag 12" sachbearbeiter="MA-1">
+  <Kunde name="Kaffeerösterei Bohne &amp; Co." kundennummer="K-1002"/>
+  <Auflage hoehe="2500"/>
+  <Termine druck="46094" weiterverarbeitung="46095" lieferung="46096"/>
+  <Lieferadresse name="Kaffeerösterei Bohne &amp; Co." strasse="Röstergasse 5" plz="50823" ort="Köln"/>
+  <Arbeitsgaenge>
+    <Arbeitsgang kostenstelle="4120" name="Bogenoffset 2" bezeichnung="Druck" ruestzeit_min="50" laufzeit_min="180" termin="druck"/>
+    <Arbeitsgang kostenstelle="4220" name="Falzen" bezeichnung="Falzen" ruestzeit_min="15" laufzeit_min="90" termin="weiterverarbeitung"/>
+    <Arbeitsgang kostenstelle="4210" name="Schneiden" bezeichnung="Schneiden" ruestzeit_min="10" laufzeit_min="45" termin="weiterverarbeitung"/>
+  </Arbeitsgaenge>
+</Auftrag>

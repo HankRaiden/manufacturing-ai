@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Auftrag nummer="26-0110" produktart="Flyer" beschreibung="Beispielauftrag 10" sachbearbeiter="MA-3">
+  <Kunde name="Agentur Farbraum" kundennummer="K-1004"/>
+  <Auflage hoehe="500"/>
+  <Termine druck="46093" weiterverarbeitung="46094" lieferung="46096"/>
+  <Lieferadresse name="Agentur Farbraum" strasse="Lindenstraße 48" plz="50674" ort="Köln"/>
+  <Arbeitsgaenge>
+    <Arbeitsgang kostenstelle="4130" name="Digitaldruck" bezeichnung="Druck" ruestzeit_min="50" laufzeit_min="90" termin="druck"/>
+    <Arbeitsgang kostenstelle="4210" name="Schneiden" bezeichnung="Schneiden" ruestzeit_min="10" laufzeit_min="45" termin="weiterverarbeitung"/>
+  </Arbeitsgaenge>
+</Auftrag>
